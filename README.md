@@ -27,7 +27,7 @@ The application must be flexible so that Pat may:
 Sales data will be stored in a JS file as separate objects for each location and must do the following:
 
   - [ ] Store min/max hourly customers
-  - [ ] Store Average cookes per customer
+  - [ ] Store Average cookies per customer
   - [ ] Use a method to create a random number generator for number of customers per hour
   - [ ] Calculate and store the simulated amount of cookies purchases for each hour at each location using average cookies purchased and the random number of customers
   - [ ] Store teh results for each location in a separate **array** as a **property** of the object representing that location
