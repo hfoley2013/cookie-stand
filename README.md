@@ -1,6 +1,6 @@
 # LAB - 6
 
-## Salmon Cookeies
+## Salmon Cookies
 
 The purpose of this application is to allow Pat's Salmon Cookies, a confectionary company, to track sales performance metrics and present a landing page for customers to interact with to learn more about the company.
 
