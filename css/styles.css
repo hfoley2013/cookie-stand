@@ -1,1 +1,120 @@
+/* 
+Custom sans-serif Google Font for use in heading tags (<h# />).
+Specified standard sans-serif web font for sales data.
+Specified standard serif web font for text.
+Specified different font colors for all three font uses.
+Background color for the default page background.
+Different background color for elements such boxes and tables. 
+*/
+/* * { 
+  outline: 1px solid red;
+  outline-offset: -1px;
+} */
 
+#home {
+  margin: 10px;
+  background-color: salmon;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+#home img {
+  width: 450px;
+  margin: 15px 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans';
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+  color: green;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: large;
+  margin: 10px 10px 0px 0px;
+  padding: 2px;
+}
+
+nav a {
+  text-decoration: none;
+  color: blue;
+}
+
+#about, #locations, #contact, #salesData {
+  margin: 10px 0px;
+  padding: 2px 0px;
+}
+
+#hoursLocations, td, th {
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+#hoursLocations th {
+  font-weight: bold;
+  text-align: center;
+}
+
+#hoursLocations th {
+  width: 200px;
+}
+
+#hoursLocations td + td {
+  text-align: center;
+}
+
+#contact p {
+  padding: 2px;
+}
+#contact p:first-of-type{
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+#contact p:nth-of-type(2) {
+  font-style: italic;
+}
+
+
+/* Sales Page */
+#sales {
+  margin: 10px;
+  background-color: antiquewhite;
+}
+
+#salesData {
+  font-family: 'Arial';
+  color: green;
+}
+
+#salesData {
+  font-family: 'Arial';
+}
+
+#salesData li {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+#salesData h2 {
+  margin: 10px 0px 5px;
+}
+
+#salesData ul li:last-child {
+  font-weight: bold;
+}
+
+#salesData li {
+  margin: 2px 0px;
+}
+
+body {
+  font-family: 'Times New Roman';
+  color: blue;
+}
