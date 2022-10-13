@@ -1,120 +1,223 @@
-/* 
-Custom sans-serif Google Font for use in heading tags (<h# />).
-Specified standard sans-serif web font for sales data.
-Specified standard serif web font for text.
-Specified different font colors for all three font uses.
-Background color for the default page background.
-Different background color for elements such boxes and tables. 
-*/
 /* * { 
   outline: 1px solid red;
   outline-offset: -1px;
 } */
 
-#home {
-  margin: 10px;
-  background-color: salmon;
+body {
+  margin: 30px;
+  background-color: #e0d8d2;
+  font-family:'Times New Roman', Times, serif;
+  font-size: large;
 }
 
 h1 {
-  font-size: xx-large;
-}
-
-#home img {
-  width: 450px;
-  margin: 15px 0px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans';
+  font-family: 'Black Han Sans', sans-serif;
+  margin: 5px 0px;
   text-decoration: none;
-  font-weight: bold;
-  font-size: larger;
-  color: green;
+  font-weight: bolder;
+  font-size: xx-large;
+  color: #477256;
 }
 
-nav ul li {
-  display: inline-block;
-  font-size: large;
-  margin: 10px 10px 0px 0px;
-  padding: 2px;
+h2, h3, h4, h5, h6 {
+  font-family: 'Black Han Sans', sans-serif;
+  margin: 5px 0px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: x-large;
+  color: #477256;
+}
+
+nav {
+  font-size: x-large;
+  padding: 10px 0px;
+  display: flex;
+  background-color: 	#bfb4ae;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
-  color: blue;
+  color: black;
+  background-color: #e0d8d2;
+  padding: 10px;
+  border-radius: 10px;
 }
 
-#about, #locations, #contact, #salesData {
-  margin: 10px 0px;
-  padding: 2px 0px;
+nav a:hover {
+  background-color: #8aa192;
+  color: whitesmoke;
 }
 
-#hoursLocations, td, th {
+#logo {
+  width: 200px;
+  height: auto;
+}
+
+#mainSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#top {
+  margin: 30px auto 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+}
+
+#storeTable, #storeTable td, #storeTable th {
+  background-color: #8aa192;
+  width: 960px;
+  border-collapse: collapse;
+  vertical-align: middle;
+  border: 1px solid black;
+  padding: 2px;
+  margin-top: 10px;
+}
+
+#storeTable th {
+  font-weight: bold;
+  text-align: center;
+}
+
+#storeTable th {
+  width: 200px;
+}
+
+#storeTable td + td {
+  text-align: center;
+}
+
+#middle {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 30px;
+}
+
+#middle img {
+  width: 350px;
+}
+
+#bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 960px;
+  margin-bottom: 30px;
+}
+
+#shirt {
+  width: 480px;
+}
+
+#featureSection {
+  width: 450px;
+}
+
+#featureSection p {
+  background-color: #8aa192;
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  height: 400px;
+  padding: 5px;
+  overflow: scroll;
+  overflow-x: hidden;
+  font-style: italic;
+}
+
+#featureSection h2 {
+  font-size: large;
+  font-weight: bold;
+}
+
+#callToAction {
+  background-color: #f2b3a4;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 2px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+#callToAction:hover {
+  background-color: #8aa192;
+  color: whitesmoke;
+}
+
+footer {
+  display: flex;
+  padding: 5px;
+  background-color: #bfb4ae;
+  justify-content: space-around;
+}
+
+#contactInfo p {
+  padding: 2px;
+}
+
+#contactInfo p:first-of-type{
+  font-weight: bold;
+  margin-top: 3px;
+}
+
+#contactInfo p:nth-of-type(2) {
+  font-style: italic;
+}
+
+#copyright {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+/* Sales Page */
+#salesData {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#salesTable {
+  margin: 30px;
+  background-color: #8aa192;
+  width: 960px;
   border-collapse: collapse;
   border: 1px solid black;
   padding: 2px;
 }
 
-#hoursLocations th {
+#salesHeader {
   font-weight: bold;
-  text-align: center;
+  vertical-align: bottom;
 }
 
-#hoursLocations th {
+#salesData td {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+#salesTable th {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
   width: 200px;
 }
 
-#hoursLocations td + td {
-  text-align: center;
+
+#salesTable td:nth-last-child(-n+15) {
+  text-align: right;
 }
 
-#contact p {
-  padding: 2px;
-}
-#contact p:first-of-type{
-  font-weight: bold;
-  margin-top: 3px;
-}
-
-#contact p:nth-of-type(2) {
-  font-style: italic;
-}
-
-
-/* Sales Page */
-#sales {
-  margin: 10px;
-  background-color: antiquewhite;
-}
-
-#salesData {
-  font-family: 'Arial';
-  color: green;
-}
-
-#salesData {
-  font-family: 'Arial';
-}
-
-#salesData li {
-  list-style-type: circle;
-  list-style-position: inside;
-}
-
-#salesData h2 {
-  margin: 10px 0px 5px;
-}
-
-#salesData ul li:last-child {
+#salesFooter {
   font-weight: bold;
 }
 
-#salesData li {
-  margin: 2px 0px;
-}
-
-body {
-  font-family: 'Times New Roman';
-  color: blue;
+#salesFoot {
+  height: 50px;
+  align-items: center;
 }
