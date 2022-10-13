@@ -1,5 +1,5 @@
 'use strict';
-
+let footer = document.createElement('tr');
 let allStores = [];
 let hours = ['6am', '7am', '8am','9am','10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
@@ -52,7 +52,6 @@ function buildTableHeader() {
   dailyLocationTotal.textContent = 'Location Daily Total';
   salesHeader.appendChild(dailyLocationTotal);
 }
-buildTableHeader();
 
 // Build Sales Data in Table
 Store.prototype.renderSalesTable = function() {
@@ -71,15 +70,9 @@ Store.prototype.renderSalesTable = function() {
   tr.appendChild(totalCookiesColumn);
 }
 
-let seattle = new Store('Seattle', 23, 65, 6.3);
-let tokyo = new Store('Tokyo', 3, 24, 1.2);
-let dubai = new Store('Dubai', 11, 38, 3.7);
-let paris = new Store('Paris', 20, 38, 2.3);
-let lima = new Store('Lima', 2, 16, 4.6);
-
 // Build Table Footer
 function buildTableFooter() {
-  let footer = document.createElement('tr');
+  footer.innerHTML = '';
   footer.textContent = 'Totals';
   salesFooter.appendChild(footer);
 
@@ -100,6 +93,34 @@ function buildTableFooter() {
   footerDailyTotal.textContent = totalFooterSales;
   footer.appendChild(footerDailyTotal);
 }
-buildTableFooter();
 
-console.log(allStores);
+
+// 1. Get form from DOM
+let form = document.querySelector('form');
+
+// 3. Declare event handler (a function) 
+let handleSubmit = function(e) {
+  e.preventDefault();
+  
+  let location = e.target.locationName.value;
+  let minCustomer = e.target.minCustomer.value;
+  let maxCustomer = e.target.maxCustomer.value;
+  let avgCookiePerCustomer = e.target.avgCookiePerCustomer.value;
+
+  // Store(location, minCustomers, maxCustomers, avgCookiesPerCustomer)
+  new Store(location, minCustomer, maxCustomer, avgCookiePerCustomer);
+  buildTableFooter();
+}
+
+// 2. Add Event Listener
+
+form.addEventListener('submit', handleSubmit);
+
+// Builds Sales Table
+buildTableHeader();
+new Store('Seattle', 23, 65, 6.3);
+new Store('Tokyo', 3, 24, 1.2);
+new Store('Dubai', 11, 38, 3.7);
+new Store('Paris', 20, 38, 2.3);
+new Store('Lima', 2, 16, 4.6);
+buildTableFooter();

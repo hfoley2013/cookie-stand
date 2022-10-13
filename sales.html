@@ -21,6 +21,24 @@
       <h2><a href="index.html#contact">Contact Us</a></h2>
     </nav>
     <main>
+      <form id="salesForm">
+        <h2>Sales Input Form</h2>
+        <label>Location
+          <input id="storeLocation" type="text" name="locationName" required>
+        </label>
+        <label> Min. Customers / Hr
+          <input id="minPerHour" type="number" name="minCustomer" required>
+        </label>
+        <label> Max. Customers / Hr
+          <input id="maxPerHour" type="number" name="maxCustomer" required>
+        </label>
+        <label> Avg. Cookies / Customer
+          <input id="avgCookies" number" name="avgCookiePerCustomer" required>
+        </label>
+        <button id="salesSubmitButton" type="submit">
+          Submit Sales Information
+        </button>
+      </form>
       <h2>Sales Data</h2>
       <section id="salesData">
         <table id="salesTable">
