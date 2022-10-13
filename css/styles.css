@@ -180,8 +180,11 @@ footer {
 #salesData {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
+  flex-direction: column;
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid #477256;
+  }
 
 #salesTable {
   margin: 30px;
@@ -218,6 +221,48 @@ footer {
 }
 
 #salesFoot {
-  height: 50px;
+  min-height: 50px;
   align-items: center;
+}
+
+#salesForm {
+  border: 2px solid #477256;
+  margin: 10px auto;
+}
+
+
+#salesForm label {
+  margin: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+
+#salesForm input {
+  align-items: right;
+}
+
+#salesSubmitButton {
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
+}
+
+#salesSubmitButton:hover {
+  background-color: #477256;
+  color: whitesmoke;
+}
+
+#salesMain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#salesData h2 {
+  height: fit-content;
+  margin: 0px 30px;
 }
