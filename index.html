@@ -1,11 +1,3 @@
-<!-- Home Page
-Custom sans-serif Google Font for use in heading tags (<h# />).
-Specified standard sans-serif web font for sales data.
-Specified standard serif web font for text.
-Specified different font colors for all three font uses.
-Background color for the default page background.
-Different background color for elements such boxes and tables.
--->
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,64 +5,108 @@ Different background color for elements such boxes and tables.
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/reset.css"></link>
     <link rel="stylesheet" href="css/styles.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <title>Pat's Salmon Cookies</title>
   </head>
   <body id="home">
-    <header><h1>We Bake 'em, You Buy 'em!</h1></header>
-    <main>
-      <img src="images/logo.png" alt="Salmon Logo">
+    <header>
+      <h1>Pat's Salmon Cookies</h1>
       <nav>
-        <ul>
-          <li>
-            <h2><a href="#about">About Us</a></h2>
-          </li>
-          <li>
-            <h2><a href="#locations">Hours & Locations</a></h2>
-          </li>
-          <li>
-            <h2><a href="#contact">Contact Us</a></h2>
-          </li>
-          <li>
-            <h2><a href="sales.html" target="_blank">Sales Data</a></h2>
-          </li>
-        </ul>
+        <img id="logo" alt="logo" src="images/logo.png"/>
+        <h2><a href='#about'>Our Story</a></h2>
+        <h2><a href='#locations'>Locations</a></h2>
+        <h2><a href='#contact'>Contact Us</a></h2>
+        <h2><a href='sales.html'>Sales Data</a></h2>
       </nav>
-      <section id="about">
-        <h3>About Us</h3>
-        <p>[This section will talk about Pat and his salmon cookie dreams]</p>
-      </section>
-      <section id="locations">
-        <h3>Hours & Locations</h3>
-        <table id="hoursLocations">
-          <tr>
-            <th>Location</th>
-            <th>Hours</th>
-          </tr>
-          <tr>
-            <td>Seattle</td>
-            <td>6:00am - 7:00pm, M-F</td>
-          </tr>
-          <tr>
-            <td>Tokyo</td>
-            <td>6:00am - 7:00pm, M-F</td>
-          </tr>
-          <tr>
-            <td>Dubai</td>
-            <td>6:00am - 7:00pm, M-F</td>
-          </tr>
-          <tr>
-            <td>Paris</td>
-            <td>6:00am - 7:00pm, M-F</td>
-          </tr>
-          <tr>
-            <td>Lima</td>
-            <td>6:00am - 7:00pm, M-F</td>
-          </tr>
-      </table>
-      </section>
-      <section id="contact">
-        <h3>Contact Us</h3>
-        <address>
+    </header>
+    <main>
+      <div id="mainSection">
+        <section id="top">
+          <h2 id="locations">Our Locations</h2>
+          <table id="storeTable">
+            <tr>
+              <th>Location</th>
+              <th>Hours</th>
+              <th>Address</th>
+            </tr>
+            <tr id="seattle">
+              <td>Seattle</td>
+              <td>6:00am - 7:00pm, M-F</td>
+              <td>
+                <address id="seattleAddress">
+                  85 Pike ST, Suite #One, Seattle, WA 98115
+                </address>
+              </td>
+            </tr>
+            <tr id="tokyo">
+              <td>Tokyo</td>
+              <td>6:00am - 7:00pm, M-F</td>
+              <td>
+                <address id="tokyoAddress">
+                  1 Chome-10-5 Akasaka, Minato City, Tokyo 107-8420, Japan
+                </address>
+              </td>
+            </tr>
+            <tr>
+              <td>Dubai</td>
+              <td>6:00am - 7:00pm, M-F</td>
+              <td>
+                <address id="dubaiAddress">
+                  Plot 38, Rabdan Street, Airport Road Embassies District, Sector W59-02 - Abu Dhabi - United Arab Emirates
+                </address>
+              </td>
+            </tr>
+            <tr>
+              <td>Paris</td>
+              <td>6:00am - 7:00pm, M-F</td>
+              <td>
+                <address id="parisAddress">
+                  2 Av. Gabriel, 75008 Paris, France
+                </address>
+              </td>
+            </tr>
+            <tr>
+              <td>Lima</td>
+              <td>6:00am - 7:00pm, M-F</td>
+              <td>
+                <address id="limaAddress">
+                  Avenida La Encalada cdra. 17 s/n, Santiago de Surco 33, Peru
+                </address>
+              </td>
+            </tr>
+          </table>
+        </section>
+        <section id="middle">
+          <img id="cookie" src="images/frosted-cookie.jpg" />
+          <img id="family" src="images/family.jpg" />
+          <img id="fish" src="images/fish.jpg" />
+        </section>
+        <section id="bottom">
+          <img id="shirt" src="images/shirt.jpg" />
+          <article id="featureSection">
+            <h3 id="about">Our Story</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eum debitis nemo temporibus sunt at, est quidem nulla magnam placeat architecto ut labore numquam voluptas. Eius veritatis quisquam distinctio consequatur?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis odit dolor tenetur, recusandae temporibus architecto debitis, consequuntur deleniti aliquam, harum itaque et molestiae maxime voluptate esse quaerat odio quo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit numquam voluptas inventore omnis debitis recusandae fuga soluta nostrum alias similique iusto odio repudiandae asperiores iure, facere consectetur nemo officia quasi!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nam distinctio suscipit unde quo qui ad nobis consequatur, vel alias vitae omnis eum ipsam labore, quibusdam perspiciatis assumenda quos sit.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam sunt rem sit eius delectus ad qui unde quod fuga nemo culpa nulla aspernatur iusto dolores reiciendis labore neque, repellat est.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo incidunt impedit nulla dolorem dolorum voluptatibus ea quis, expedita, quas deserunt nesciunt laborum exercitationem nostrum fugiat facilis praesentium blanditiis eum error!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit non quibusdam officia numquam, quos perspiciatis quam facilis accusamus harum blanditiis assumenda, distinctio minima ullam possimus ab quo accusantium illo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo est cum culpa atque cupiditate doloremque enim praesentium quos saepe? Dolor quod aliquam velit alias! A officia voluptates blanditiis porro nostrum?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, saepe labore! Blanditiis dignissimos, laudantium impedit perspiciatis numquam accusamus. Consequuntur accusantium reprehenderit consequatur illo esse expedita ea atque voluptatum dolores quaerat!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas numquam eaque vel ab perspiciatis, quisquam magnam obcaecati! Molestiae deserunt, itaque vitae fugit sit modi rem non, dolores commodi quisquam nisi?
+            </p>
+            <button id="callToAction">
+              Buy This Sweet Salmon Shirt NOW!!!
+            </button>
+          </article>
+        </section>
+      </div>
+      <footer id="contact">
+        <address id="contactInfo">
           <p>Pat Fitzpatrick</p>
           <p>Founder & CEO</p>
           <p>Phone: (360) 123-4567</p>
@@ -79,10 +115,10 @@ Different background color for elements such boxes and tables.
           <p>Suite # One</p>
           <p>Seattle, WA 98115</p>
         </address>
-      </section>
+        <section id="copyright">
+          &copy; 2022, Pat's Salmon Cookies&trade;
+        </section>
+      </footer>
     </main>
-    <footer>
-      &copy; 2022, Pat's Salmon Cookies&trade;
-    </footer>
   </body>
 </html>
